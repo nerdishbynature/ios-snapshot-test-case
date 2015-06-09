@@ -54,6 +54,7 @@
 		B32447D91AB78B5E00B1D6FF /* square_with_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_with_text.png; sourceTree = "<group>"; };
 		B32447DA1AB78B5E00B1D6FF /* square-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-copy.png"; sourceTree = "<group>"; };
 		B32447DB1AB78B5E00B1D6FF /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		F069A0511B27816800FA8F07 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		F0D698F41B204E120005CAC9 /* SwiftSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +109,7 @@
 				B31988251AB7849400B0A900 /* UIImage+Compare.m */,
 				B31988261AB7849400B0A900 /* UIImage+Diff.h */,
 				B31988271AB7849400B0A900 /* UIImage+Diff.m */,
+				F069A0511B27816800FA8F07 /* FBSnapshotTestCase.modulemap */,
 				B31987F31AB782D000B0A900 /* Supporting Files */,
 			);
 			path = FBSnapshotTestCase;
@@ -319,8 +321,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = FBSnapshotTestCase/FBSnapshotTestCase.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -358,7 +362,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = FBSnapshotTestCase/FBSnapshotTestCase.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
