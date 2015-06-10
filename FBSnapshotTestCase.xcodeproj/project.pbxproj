@@ -22,7 +22,6 @@
 		B32447DC1AB78B5E00B1D6FF /* square_with_text.png in Resources */ = {isa = PBXBuildFile; fileRef = B32447D91AB78B5E00B1D6FF /* square_with_text.png */; };
 		B32447DD1AB78B5E00B1D6FF /* square-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B32447DA1AB78B5E00B1D6FF /* square-copy.png */; };
 		B32447DE1AB78B5E00B1D6FF /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = B32447DB1AB78B5E00B1D6FF /* square.png */; };
-		F069A0521B27816800FA8F07 /* FBSnapshotTestCase.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F069A0511B27816800FA8F07 /* FBSnapshotTestCase.modulemap */; };
 		F0D698F51B204E120005CAC9 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D698F41B204E120005CAC9 /* SwiftSupport.swift */; };
 /* End PBXBuildFile section */
 
@@ -264,7 +263,6 @@
 				F0D698F51B204E120005CAC9 /* SwiftSupport.swift in Sources */,
 				13CBB39E1AEE013900B6ADBA /* FBSnapshotTestCasePlatform.m in Sources */,
 				B319882D1AB7849400B0A900 /* UIImage+Compare.m in Sources */,
-				F069A0521B27816800FA8F07 /* FBSnapshotTestCase.modulemap in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +388,6 @@
 				INFOPLIST_FILE = "FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = FBSnapshotTestCase/FBSnapshotTestCase.modulemap;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -416,7 +413,6 @@
 				INFOPLIST_FILE = "FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = FBSnapshotTestCase/FBSnapshotTestCase.modulemap;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
