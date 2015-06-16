@@ -2,6 +2,11 @@
 
 set -eu
 
+function rome() {
+  pod install --no-integrate
+  xcodebuild -project Pods/Pods.xcodeproj -scheme Pods -sdk iphonesimulator clean build
+}
+
 function ci_lib() {
     xcodebuild -project FBSnapshotTestCase.xcodeproj \
                -scheme FBSnapshotTestCase \
@@ -19,6 +24,6 @@ function ci_demo() {
     popd
 }
 
-ci_lib && ci_demo
+rome && ci_lib && ci_demo
 
 
