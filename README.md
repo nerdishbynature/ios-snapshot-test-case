@@ -1,7 +1,7 @@
 FBSnapshotTestCase
 ======================
 
-[![Build Status](https://travis-ci.org/facebook/ios-snapshot-test-case.svg)](https://travis-ci.org/facebook/ios-snapshot-test-case)
+[![Build Status](https://travis-ci.org/facebook/ios-snapshot-test-case.svg)](https://travis-ci.org/facebook/ios-snapshot-test-case) [![Cocoa Pod Version](https://cocoapod-badges.herokuapp.com/v/FBSnapshotTestCase/badge.svg)](http://cocoadocs.org/docsets/FBSnapshotTestCase/)
 
 What it does
 ------------
@@ -40,6 +40,8 @@ Installation with CocoaPods
      end
      ```
 
+   If you support iOS 7 use `FBSnapshotTestCase/Core` instead, which doesn't contain Swift support.
+
    Replace "Tests" with the name of your test project.
 
 2. Define `FB_REFERENCE_IMAGE_DIR` in your scheme. This should
@@ -73,6 +75,7 @@ Features
 - Supply an optional "identifier" if you want to perform multiple snapshots
   in a single test method.
 - Support for `CALayer` via `FBSnapshotVerifyLayer`.
+- `usesDrawViewHierarchyInRect` to handle cases like `UIVisualEffect`, `UIAppearance` and Size Classes.
 
 Notes
 -----
